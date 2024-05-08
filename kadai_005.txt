@@ -1,0 +1,50 @@
+yujiw@DESKTOP-FFJN7S2 MINGW64 ~ (main)
+$ cd git_challenge
+
+yujiw@DESKTOP-FFJN7S2 MINGW64 ~/git_challenge (main)
+$ git init
+Initialized empty Git repository in C:/Users/yujiw/git_challenge/.git/
+
+yujiw@DESKTOP-FFJN7S2 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+
+yujiw@DESKTOP-FFJN7S2 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+yujiw@DESKTOP-FFJN7S2 MINGW64 ~/git_challenge (main)
+$ git commit -m "1行目を追加"
+[main (root-commit) 9b6abf5] 1行目を追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+yujiw@DESKTOP-FFJN7S2 MINGW64 ~/git_challenge (main)
+$ git log
+commit 9b6abf57821957379ac885c80ebdaaf32efe8a5e (HEAD -> main)
+Author: qallqa <yujiwatanabe51@gmail.com>
+Date:   Wed May 8 23:03:34 2024 +0900
+
+    1行目を追加
+
+yujiw@DESKTOP-FFJN7S2 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+yujiw@DESKTOP-FFJN7S2 MINGW64 ~/git_challenge (main)
+$ git commit -m "2行目を追加"
+[main 7947773] 2行目を追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+yujiw@DESKTOP-FFJN7S2 MINGW64 ~/git_challenge (main)
+$ git log
+commit 7947773324f0f8661775c12bd38e70b0b58e0c81 (HEAD -> main)
+Author: qallqa <yujiwatanabe51@gmail.com>
+Date:   Wed May 8 23:05:13 2024 +0900
+
+    2行目を追加
+
+commit 9b6abf57821957379ac885c80ebdaaf32efe8a5e
+Author: qallqa <yujiwatanabe51@gmail.com>
+Date:   Wed May 8 23:03:34 2024 +0900
+
+    1行目を追加
+
